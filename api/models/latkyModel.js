@@ -4,6 +4,10 @@ var Schema = mongoose.Schema;
 
 
 var LatkaSchema = new Schema({
+  id: {
+    type: Number,
+    required: 'Kindly enter the id of the latka'
+  },
   title: {
     type: String,
     required: 'Kindly enter the name of the latka'

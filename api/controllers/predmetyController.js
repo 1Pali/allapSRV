@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
   Predmet = mongoose.model('Predmety');
 
 exports.list_all_predmety = function(req, res) {
-    Predmet.find({}, function(err, task) {
+    Predmet.find({}, function(err, predmet) {
     if (err)
       res.send(err);
     res.json(predmet);
@@ -17,7 +17,7 @@ exports.list_all_predmety = function(req, res) {
 
 exports.create_a_predmet = function(req, res) {
   var new_predmet = new Predmet(req.body);
-  new_predmet.save(function(err, task) {
+  new_predmet.save(function(err, predmet) {
     if (err)
       res.send(err);
     res.json(predmet);
