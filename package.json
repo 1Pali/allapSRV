@@ -1,0 +1,32 @@
+{
+  "name": "allapsrv",
+  "version": "1.0.0",
+  "description": "REST API Service for ALLAP school app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1Pali/allapSRV.git"
+  },
+  "keywords": [
+    "RESTful",
+    "API",
+    "ALLAP"
+  ],
+  "author": "Pali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1Pali/allapSRV/issues"
+  },
+  "homepage": "https://github.com/1Pali/allapSRV#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.16"
+  }
+}
