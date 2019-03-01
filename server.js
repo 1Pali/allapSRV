@@ -9,22 +9,22 @@ var express = require('express'),
   mongodb = require("mongodb"),
   ObjectID = mongodb.ObjectID
 // mongoose instance connection url connection
-// mongoose.Promise = global.Promise;
-// mongoose.connect('mongolab-curly-19764'); 
-
+ 
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+mongoose.Promise = global.Promise;
+ mongoose.connect('mongolab-curly-19764'); 
 
-mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongolab-curly-19764", function (err, client) {
-  if (err) {
-    console.log(err);
-    process.exit(1);
-  }
-  console.log("Database connection ready");
-});
+// mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongolab-curly-19764", function (err, client) {
+//   if (err) {
+//     console.log(err);
+//     process.exit(1);
+//   }
+//   console.log("Database connection ready");
+// });
 
 var routes = require('./api/routes/allapRoutes'); //importing route
 routes(app); //register the route
