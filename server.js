@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 mongoose.Promise = global.Promise;
- mongoose.connect('mongodb://heroku_1w9jzf9z:roi9e19aet0s9m6ehoc01v9vlm@ds019268.mlab.com:19268/heroku_1w9jzf9z'); 
+ mongoose.connect('mongodb://heroku_cxsw3l8r:j5cp4afhebhkfldughscuhlkif@ds163226.mlab.com:63226/heroku_cxsw3l8r'); 
 
 // mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongolab-curly-19764", function (err, client) {
 //   if (err) {
