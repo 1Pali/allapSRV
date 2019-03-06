@@ -12,6 +12,13 @@ exports.list_all_latky = function(req, res) {
   });
 };
 
+exports.list_req_latky = function(req, res) {
+  Latka.find({KategoriaId: req.params.kategoriaId}, function(err, latka) {
+  if (err)
+    res.send(err);
+  res.json(latka);
+});
+};
 
 
 

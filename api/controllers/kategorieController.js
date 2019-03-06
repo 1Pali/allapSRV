@@ -12,6 +12,13 @@ exports.list_all_kategorie = function(req, res) {
   });
 };
 
+exports.list_req_kategorie = function(req, res) {
+  Kategoria.find({PredmetId: req.params.predmetId}, function(err, kategoria) {
+  if (err)
+    res.send(err);
+  res.json(kategoria);
+});
+};
 
 
 

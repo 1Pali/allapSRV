@@ -15,6 +15,10 @@ var LatkaSchema = new Schema({
   Created_date: {
     type: Date,
     default: Date.now
+  },
+  KategoriaId:{
+    type: String,
+    required: 'Kindly enter the kategoriaId of the latka'
   }
 });
 

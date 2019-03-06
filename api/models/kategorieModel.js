@@ -15,6 +15,10 @@ var KategoriaSchema = new Schema({
   Created_date: {
     type: Date,
     default: Date.now
+  },
+  PredmetId:{
+    type: String,
+    required: 'Kindly enter the predmetId of the kategoria'
   }
 });
 
