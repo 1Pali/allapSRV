@@ -12,6 +12,13 @@ exports.list_all_predmety = function(req, res) {
   });
 };
 
+exports.list_req_predmety = function(req, res) {
+  Predmet.find({title: req.params.predmetTitle}, function(err, predmet) {
+  if (err)
+    res.send(err);
+  res.json(predmet);
+});
+};
 
 
 

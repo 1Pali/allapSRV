@@ -9,6 +9,8 @@ module.exports = function(app) {
     .get(predmetyList.list_all_predmety)
     .post(predmetyList.create_a_predmet);
 
+  app.route('/predmety/:predmetTitle')
+    .get(predmetyList.list_req_predmety)
 
   app.route('/predmety/:predmetId')
     .get(predmetyList.read_a_predmet)
