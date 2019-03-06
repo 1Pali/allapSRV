@@ -22,7 +22,7 @@ module.exports = function(app) {
     .post(kategorieList.create_a_kategoria);
 
   app.route('/kategorie/:predmetId')
-    .get(predmetyList.list_req_kategorie)
+    .get(kategorieList.list_req_kategorie)
 
   app.route('/kategorie/:kategoriaId')
     .get(kategorieList.read_a_kategoria)
@@ -34,7 +34,7 @@ module.exports = function(app) {
     .post(latkyList.create_a_latka);
 
   app.route('/latky/:kategoriaId')
-    .get(predmetyList.list_req_latky)
+    .get(latkyList.list_req_latky)
 
   app.route('/latky/:latkaId')
     .get(latkyList.read_a_latka)
